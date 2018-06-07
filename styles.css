@@ -1,0 +1,215 @@
+/* COLOR SCHEME 
+Light Purple: #CABEFC;
+Dark Blue: #2E3192
+Pink Purple: #F0BDF9
+Light Blue: #AACEFF
+Moon Yellow: #FFEAB7
+*/
+
+* {
+	box-sizing: border-box;
+   /* border:1px solid red; */
+}
+
+body {
+    background-color: #CABEFC;
+    font-family: Bookman, serif;
+}
+
+header {
+    background: linear-gradient( #2e3192, #FFFF);
+}
+nav {
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 1.25em;
+    background: linear-gradient(#ffff, #cabefc);
+
+    /* CREATE MEDIA QUERY FOR NAV BAR @390 SO THEY COLLAPSE ON TOP OF EACH OTHER!!! */
+}
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+}
+li a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+
+h1 {
+    text-decoration: underline;
+}
+
+h2 {
+    text-align: center;
+}
+h3 {
+    margin: 0 auto;
+    padding: 2px 2px;
+    text-transform: uppercase;
+}
+
+footer {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #2E3192;
+}
+
+span {
+    font-weight: bold;
+}
+
+form {
+    margin-bottom:10%;
+}
+fieldset {
+    margin: 0 auto;
+    background-color: #FFEAB7;
+    width: 30%;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 5px 5px 5px 0;
+    display: inline-block;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+.logo {
+    display: block;
+    margin: 0 auto;  
+}
+
+
+.flexbanner {
+    display: flex;
+    align-items: center;
+    direction: column;
+    justify-content: center;
+}
+
+.background {
+    /* display: block; */
+    position: relative;
+    width: 100%;
+    height: auto;
+   
+}
+
+.quote {
+    position: absolute;
+    align-items: center;
+    width: 90%;
+}
+
+.flexicon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row; 
+    background: linear-gradient(#ffff, #CB9AC6, #6A80FF, #AACEFF, #E0BFFF);
+}
+
+.icon-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+}
+
+.flexiconheading {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+    flex: 1;
+}
+.icon-heading {
+    width:25%;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;  /* CREATE MEDIA QUERY @625 - SO THEY COLLAPSE ON TOP OF EACH OTHER!!! */
+}
+
+.wrapper-container {
+    width: 70%;
+}
+.flexcontainer {
+	display: flex;
+    flex-direction: row;
+    margin: 10%;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between; 
+	justify-content: center;
+}
+
+.galleryItem {
+	width: 300px;
+	height: 300px;
+    background-color:#F0BDF9;
+    border: #333333 solid 1px;
+    margin: 5px;
+}
+
+.flexBar {
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+}
+
+.infobar {
+    background: linear-gradient(#CABEFC, #2E3192);
+    padding: 30px 20px;
+}
+
+.contactinfo, signupform { 
+    position: absolute;
+    align-items: center;
+}
+
+.signupform a {
+    text-align: center;   
+}
+
+@media only screen and (min-width: 391px) {
+    nav {
+        font-size: 1.25em;
+    }
+
+}
+
+@media only screen and (max-width: 590px){
+ .infobar {
+    visibility: hidden;
+ }
+}
+
+@media only screen and (max-width: 465px) {
+    nav {
+        font-size: 0.8em;
+    }
+    .logo {
+        width: 60%;
+    }
+    .icon-image {
+        width: 60%;
+    }
+    .icon-heading {
+        width: 60%;
+    }
+}
